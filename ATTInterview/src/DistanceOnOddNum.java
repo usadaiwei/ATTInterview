@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/* Time complexity: nlogn because of sorting
+/* Time complexity: On
  */
 public class DistanceOnOddNum {
 

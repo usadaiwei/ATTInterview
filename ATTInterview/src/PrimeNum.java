@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// TC: n^2
 public class PrimeNum {
 
     public static List<Integer> sumOfPrimes(int number){
@@ -17,7 +18,7 @@ public class PrimeNum {
                 primes.add(2 * i + 1);
 
         if (number <= 2 || number % 2 != 0)
-            return null;
+            return ans;
 
         for (int i = 0 ; primes.get(i) <= number / 2; i++) {
             int diff = number - primes.get(i);
