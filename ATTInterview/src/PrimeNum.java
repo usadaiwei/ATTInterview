@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 // TC: n^2
@@ -17,7 +18,7 @@ public class PrimeNum {
             if (check[i] == false)
                 primes.add(2 * i + 1);
 
-        if (number <= 2 || number % 2 != 0)
+        if (number <= 2)
             return ans;
 
         for (int i = 0 ; primes.get(i) <= number / 2; i++) {
@@ -31,6 +32,8 @@ public class PrimeNum {
     }
 
     public static void main(String[] args){
-        System.out.println(sumOfPrimes(9));
+        List<Integer> list = sumOfPrimes(9);
+        System.out.println(Arrays.toString(list.toArray()));
+
     }
 }
